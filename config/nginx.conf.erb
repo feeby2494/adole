@@ -50,7 +50,7 @@ http {
 
         location / {
             add_header 'Cache-Control' "public, max-age=3600";
-            root /dist;
+            root /app/dist;
             try_files $uri $uri/ index.html;
         }
 
