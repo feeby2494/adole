@@ -50,17 +50,12 @@ http {
 
         root /app/dist;
         index index.html
-        location / {
-            try_files /index.html =404;
-        }
-
-
         # Should work
-        # location / {
-        #     add_header 'Cache-Control' "public, max-age=3600";
-        #     root /app/dist;
-        #     try_files $uri $uri/ index.html;
-        # }
+        location / {
+            add_header 'Cache-Control' "public, max-age=3600";
+            root /app/dist;
+            try_files $uri $uri/ index.html;
+        }
 
         location = /index.html {
             add_header Cache-Control "no-store, no-cache";
