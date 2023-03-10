@@ -48,6 +48,7 @@ http {
 		# 	proxy_pass http://app_server;
 		# }
 
+        # Should work
         location / {
             add_header 'Cache-Control' "public, max-age=3600";
             root /app/dist;
