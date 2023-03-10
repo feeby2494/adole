@@ -54,6 +54,7 @@ http {
         location / {
             add_header 'Cache-Control' "public, max-age=3600";
             root /app/dist;
+            include  /etc/nginx/mime.types;
             try_files $uri $uri/ index.html;
         }
 
