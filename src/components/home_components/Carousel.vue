@@ -1,17 +1,30 @@
+<script>
+import driver from "@/assets/pictures/driver.jpg";
+import doctorVisit from "@/assets/pictures/doctor-visit.jpg";
+import happyCustomer from "@/assets/pictures/happy-customer.jpg";
+
+export default {
+    data() {
+        return {
+            driver: driver,
+            doctorVisit: doctorVisit,
+            happyCustomer: happyCustomer
+        }
+    }
+}
+</script>
+
 <template>
-    <div id="carouselExample" class="carousel slide carousel-fade">
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                <img :src="driver" class="d-block w-100" alt="our professional driver"> 
             </div>
             <div class="carousel-item">
-            <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Second slide</text></svg>
+                <img :src="doctorVisit" class="d-block w-100" alt="doctor consultation"> 
             </div>
             <div class="carousel-item">
-            <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Third slide</text></svg>
+                <img :src="happyCustomer" class="d-block w-100" alt="happy customer"> 
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

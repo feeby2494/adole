@@ -14,16 +14,18 @@
       <div class="col-sm-6 mt-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <OffCanvas />
+            <h5 class="card-title">More Info About Our Services</h5>
+            <a class="btn btn-info" href="/about">About Us</a>
+            <!-- <OffCanvas /> -->
           </div>
         </div>
       </div>
       <div class="col-sm-6 mt-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <OffCanvas />
+            <h5 class="card-title">Contact us for More Info</h5>
+            <a class="btn btn-info" href="/contact">Contact Us</a>
+            <!-- <OffCanvas /> -->
           </div>
         </div>
       </div>  
