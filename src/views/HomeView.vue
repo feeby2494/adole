@@ -1,7 +1,7 @@
 <template>
   <main class="container-fluid">
     <div class="row">
-      <div class="col-12 my-3">
+      <div class="col-12 my-4">
         <HeroSection />   
       </div>
     </div> 
